@@ -5,44 +5,116 @@
   
   body {
     margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  header {
+   
+  }
+  
   
   /* Style the top navigation bar */
   .topnav {
-    overflow: hidden;
-    background-color: #333;
+    padding: 20px 35px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
   }
   
   /* Style the topnav links */
   .topnav a {
-    float: right;
-    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
   
+  .topnav h1 a{
+    float: left;
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    
+  }
+
   /* Change color on hover */
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color:
+    color: 
   }
   
   /* Style the hero */
-  .hero {
-    background-color: #ddd;
-    padding: 10px;
-    height: 200px; /* Should be removed. Only for demonstration */
-  }
-
-  .hero-cta {
-    
-  }
+  
+ .hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+ }
+ .hero-content {
+    position: relative;
+    font-family: "Monserrat", sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+ }
+ .hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+ }
+ .hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+ }
+ .hero-button {
+    background-color: #ae2d59;
+    color: white;
+    border: 1px solid #cb376a;
+    margin-top: 5rem;
+    padding: 0.9375rem1.875rem;
+    font-family: "Monserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+ }
+ .hero-button:hover {
+    background-color: #cb376a;
+    border: 1px solid #db7598;
+ }
   
   /* Style the footer */
   .footer {
     background-color: #f1f1f1;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
   }
