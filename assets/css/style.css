@@ -9,11 +9,6 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  header {
-   
-  }
-  
-  
   /* Style the top navigation bar */
   .topnav {
     padding: 20px 35px;
@@ -25,6 +20,24 @@
     background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .topnav ul {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+  }
+
+  .topnav li {
+    padding-bottom: px;
+    display: inline-block;
+    float: left;
+  }
+
+  .logo{
+    font-size: 36px;
   }
   
   /* Style the topnav links */
@@ -33,25 +46,13 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  
-  .topnav h1 a{
-    float: left;
-    font-weight: bold;
-    margin: 0;
-    font-size: 36px;
-    
   }
 
+  
   /* Change color on hover */
   .topnav a:hover {
     background-color:
-    color: 
+    color: pink;
   }
   
   /* Style the hero */
@@ -63,6 +64,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
+    background-position: 80%;
+
  }
  .hero::before {
     content: "";
@@ -109,6 +113,17 @@
     border: 1px solid #db7598;
  }
   
+#about-me {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+  .portrait {
+    display: flex;
+    
+  }
+
   /* Style the footer */
   .footer {
     background-color: #f1f1f1;
