@@ -130,37 +130,82 @@
   /* About Me Section */
 
   .about {
-    display:flex;
-    flex-direction: row;
+    
   }
 
-  .bio p img{
+  .bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    padding: 30px;
   }
-  
+
   /* My Work Section */
+
+  .highlighted-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: auto 0;
+    padding: 30px;
+  }
 
   .projects {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 20px;    
   }
 
-  
-
   /* Contact Me Section */
+
+
+  .footer-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .footer-navigation ul {
+    width: 100%;
+    list-style: none;
+  }
+
+  .footer-navigation li {
+  }
+
+  .footer-navigation a {
+    text-decoration: none;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 60px;
+  }
 
   .social-media {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: flex-end;
     list-style: none;
+    margin-right: 60px;
+
   }
 
   /* Style the footer */
+
+  .copyright {
+  }
 
   .footer {
     background-color: #f1f1f1;
