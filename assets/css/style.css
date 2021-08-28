@@ -275,7 +275,7 @@
   }
 
   .contact a {
-
+    
   }
 
   .contact ul {
@@ -285,10 +285,13 @@
   }
 
   .contact li {
+    
+  }
+
+  .social-media {
     display: inline;
   }
 
-  
  
   /* Style the footer */
 
