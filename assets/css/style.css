@@ -12,14 +12,18 @@
 }
 
   a:hover {
-    color: gray;
+    color: #BD815C;
   }
 
   body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
+    position: absolute;
+  }
+
+  body p {
+    font-size: 20px;
   }
 
   /* Style the top navigation bar */
@@ -31,8 +35,9 @@
     top: 0;
     margin: 0;
     width: 100%;
-    background-color: #AAB7A6;
+    background-color: #6E7559;
     z-index: 9999;
+    font-size: 20px;
   }
   .topnav ul {
     width: 100%;
@@ -62,7 +67,7 @@
 
   /* Change color on hover */
   .topnav a:hover {
-    color: #C7AFAC;
+    color: #BD815C;
   }
   
   /* Style the hero */
@@ -74,7 +79,8 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-center;
-    background-color: #AAB7A6;
+    background-color: #6E7559;
+    padding-bottom: 60px;
  }
 
  .hero-content {
@@ -88,36 +94,35 @@
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 0;
- }
-
- .hero-title span {
-   color: #;
+    padding: 0px 10px 0px 10px;
  }
 
  .hero-subtitle {
     font-size: 2rem;
     font-weight: 200;
     margin-top: 1rem;
+    padding: 0px 10px 0px 10px;
  }
  .hero-button {
-    background-color: gray;
+    background-color: #BD815C;
     color: white;
     margin-top: 5rem;
+    margin-left: 10px;
     border: none;
     padding: 10px;
-    font-size: 1.125rem;
+    font-size: 30px;
     font-weight: 200;
     cursor: pointer;
  }
  .hero-button:hover {
-    background-color: #C7AFAC;
+    background-color: #D6D5CC;
  }
 
  /* Style the section titles */
   
  .section-title {
   padding: 60px;
-  font-size: 32px;
+  font-size: 40px;
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
@@ -126,98 +131,94 @@
 
   /* About Me Section */
   #about-me {
-    background-color: #C7A583;
+    background-color: #AEB7A0;
   }
 
-  .about h2{
+   .about-title{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding-left: 50px;
-    font-size: 32px;
+    padding: 60px 0px 0px 80px;
+    font-size: 40px;
+    color: #fff;
+    margin:0px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
     color: #fff;
   }
 
+
   .bio {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    /* margin: 0 auto; */
-    padding-left: 50px;
-    color: #fff
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 80px 50px 80px;
+    font-size: 18px;
+  }
+  
+  .bio-paragraph {
+    height: 100%
     
   }
-
-  .bio img {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%; */
-    /* margin: 0 auto; */
-    /* padding-left: 20px; */
+  
+  .bio-img {
+    height: 100%;
   }
 
   /* My Work Section */
 
   #my-work {
-    background-color: #282227;
-    color: #C7AFAC;
+    background-color: #D6D5CC;
+    color: #36363F;
   }
 
-  .schuler {
-    padding: 30px;
-    
-    float:right;
-  }
-
-  .highlighted-project {
+  .highlighted-project-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     width: 100%;
-    padding: 30px;
+    padding: 0px 80px 0px 80px;
   }
 
-  .highlighted-project span {
-    font-size: 32px;
+  .highlighted-project-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .schuler-title {
+    height: 100%;
   }
   
-  .highlighted-project h2{
-    /* display: flex;
-    flex-direction: row;
-    justify-content: flex-start; */
+  .schuler-image {
+    height: 100%;
   }
 
-  .highlighted-project img {
-    width: 100%;
-    /* height: auto; */
-  }  
+  .schuler-image img {
+    height: 500px;
+  }
 
-  .highlighted-project img:hover{
+  .schuler-image img:hover {
     opacity: 0.75;
   }
-
-  .highlighted-project p {
-    /* padding-top: 60px;
-    padding-right: 40px; */
-  }
-
-  .schuler {
-
-  }
   
+
   .projects {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 40px 80px 40px 80px;
+
   }
   
   .projects img {
-    height: 200px;
+    height: 300px;
   }
 
   .projects img:hover {
@@ -227,15 +228,15 @@
   .project-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .run-buddy {
-      height: 100%;
+    height: 100%;
   }
 
   .robot-gladiators {
-        height: 100%;
+    height: 100%;
   }
   
   /* Contact Me Section */
@@ -243,7 +244,6 @@
   .footer-row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
   }
@@ -251,11 +251,14 @@
   .footer-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    margin-right: 80px;
   }
 
   .footer-navigation {
     height: 100%;
+    margin-left: 40px;
+    font-size: 20px;
   }
 
   .footer-navigation ul {
@@ -270,36 +273,64 @@
   .contact {
     height: 100%;
     text-align: right;
-    margin-right: 60px;
-    
-  }
-
-  .contact a {
-    
   }
 
   .contact ul {
     list-style-type: none;
     overflow: hidden;
     text-decoration: none;
-  }
-
-  .contact li {
-    
+    font-size: 20px;
   }
 
   .social-media {
     display: inline;
+    font-size: 36px;
+    padding: 10px;
   }
 
  
   /* Style the footer */
 
+  #contact-me {
+    background-color: #6E7559;
+    color: #fff;
+  }
+
   .copyright {
+    margin-left: 70px;
+    font-size: 18px;
+    
   }
 
   .footer {
-    background-color: #f1f1f1;
     padding: 10px;
     width: 100%;
+    background-color: #6E7559;
+    color: #fff;
   }
+
+  /* STYLE FOR DESKTOPS AND BIGGER */
+
+  @media screen and (max-width: 980px) {
+    
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    .topnav a {
+      font-size: 25px;
+    }
+    .hero {
+      height: 100%;
+    }
+    .hero-title {
+      font-size: 
+    }
+
+    .bio-paragraph {
+      font-size: 20px;
+    }
+  
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+ 
